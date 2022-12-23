@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { modularScale } from 'polished'
+import { modularScale, between } from 'polished'
 
 export default createGlobalStyle`
   * {
@@ -25,13 +25,30 @@ export default createGlobalStyle`
     font-size: ${modularScale(2)}
   }
 
+  body #root {
+    width: 100%;
+    height: 100%;
+  }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
 
-  .MonstersWrapper {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    max-height: 70vh;
+    height: 100%;
+  }
+
+  .content {
+    margin-top: ${between('5px', '10px')};
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%
   }
 `

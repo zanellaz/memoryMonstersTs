@@ -4,16 +4,15 @@ import card from '../../img/card.png'
 export const S = {
     CardWrapper: styled.div`
         width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     `,
     CardImage: styled.div`
-        border: 1px solid red;
-        width: 100%;
+        border: 1px solid purple;
         height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
